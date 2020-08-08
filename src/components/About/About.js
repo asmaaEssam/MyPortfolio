@@ -19,7 +19,7 @@ import {
   Line,
   Icon
 } from "./style";
-import {faRocket,faLightbulb,faSpider, faFastForward, faStore} from '@fortawesome/free-solid-svg-icons'
+import {faRocket,faLightbulb,faSpider, faStore} from '@fortawesome/free-solid-svg-icons'
 import Img from "../../media/asmaa.jpg";
 const About = () => {
   return (
