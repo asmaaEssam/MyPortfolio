@@ -32,7 +32,7 @@ function useSticky() {
     return () => {
       window.removeEventListener("scroll", () => handleScroll)
     }
-  }, [debounce, handleScroll])
+  })
 
   return { isSticky, element }
 }
