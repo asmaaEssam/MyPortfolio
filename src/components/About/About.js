@@ -1,7 +1,7 @@
 import React from "react";
 import {
   AboutWrapper,
-  Text,
+  Header,
   Container,
   Child,
   Hexagon,
@@ -16,37 +16,50 @@ import {
   Strok,
   Fill,
   Skill,
+  Line,
+  Icon
 } from "./style";
+import {faRocket,faLightbulb,faSpider, faFastForward, faStore} from '@fortawesome/free-solid-svg-icons'
 import Img from "../../media/asmaa.jpg";
 const About = () => {
   return (
     <AboutWrapper>
-      <Text>ABOUT</Text>
+      <Header>ABOUT
+      <Line/>
+      </Header>
       <Container>
         <Child>
           <HexagonWrapper>
-            <Hexagon />
+            <Hexagon>
+            <Icon size="3x" icon= {faSpider}/>
+            </Hexagon>
           </HexagonWrapper>{" "}
           <Title>Fast</Title>
           <P>Fast load times and lag free interaction, my highest priority.</P>
         </Child>
         <Child>
           <HexagonWrapper>
-            <Hexagon />
+            <Hexagon>
+            <Icon style={{left: "-0.2rem"}}size="3x" icon= {faStore}/>
+            </Hexagon>
           </HexagonWrapper>{" "}
           <Title>Responsive</Title>
           <P>My layouts will work on any device, big or small.</P>
         </Child>
         <Child>
           <HexagonWrapper>
-            <Hexagon />
+          <Hexagon>
+            <Icon style={{left: "0.5rem"}} size="3x" icon= {faLightbulb}/>
+            </Hexagon>
           </HexagonWrapper>{" "}
           <Title>Intuitive</Title>
           <P>Strong preference for easy to use, intuitive UX/UI.</P>
         </Child>
         <Child>
           <HexagonWrapper>
-            <Hexagon />
+            <Hexagon>
+            <Icon size="3x" icon= {faRocket}/>
+            </Hexagon>
           </HexagonWrapper>{" "}
           <Title>Dynamic</Title>
           <P>

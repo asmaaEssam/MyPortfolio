@@ -13,7 +13,7 @@ export const Canvas = styled.div`
     left: 0;
     position: absolute;
     top: 0;
-    width: 100vw;
+    width: 100%;
 `;
 export const Intro = styled.div`
     display: flex;
@@ -56,6 +56,14 @@ export const NavbarStyle = styled.nav`
     display: flex;
     justify-contect: center;
     align-items: center;
+    @keyframes moveDown {
+        from {
+          transform: translateY(-10rem);
+        }
+        to {
+          transform: translateY(0rem);
+        }
+      }
 `;
 export const Item = styled.li`
     padding-left: 4%;

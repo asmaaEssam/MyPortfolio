@@ -1,12 +1,13 @@
 import React from 'react';
 import {NavbarStyle,Item} from './style'
-const Navbar = () => {
+const Navbar = ({ sticky }) => {
     return ( 
-        <NavbarStyle>
+        <NavbarStyle style={{ position: sticky? 'fixed': '',
+            top: sticky? '0': '',
+            animation: sticky? "moveDown 0.5s ease-in-out": ""}}>
             <Item>Home</Item>
             <Item>About</Item>
             <Item>Portfolio</Item>
-            <Item>Blog</Item>
             <Item>Contact</Item>
         </NavbarStyle>
      );

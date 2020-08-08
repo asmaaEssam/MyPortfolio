@@ -1,10 +1,11 @@
 import styled from "styled-components";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const AboutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 100px;
+  align-items: center;
 `;
 
 export const Container = styled.div`
@@ -12,13 +13,31 @@ export const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  @media (max-width: 577px) {
+    margin-top: 2.5rem;
+  }
 `;
-export const Text = styled.div`
+export const Header = styled.div`
   font-size: 30pt;
+  color: #444649;
+  font-family: "raleway-bold";
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+`;
+export const Line = styled.div`
+  width: 5rem;
+  border-top: 3px solid #444649;
+  position: absolute;
+  display: inline;
+  right: 50%;
+  left: 26%;
+  bottom: 0;
 `;
 export const Child = styled.div`
   padding: 1%;
-  margin-bottom: 5%;
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -45,7 +64,7 @@ export const Hexagon = styled.div`
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     position: absolute;
-    bottom: 50px;
+    bottom: 49px;
     left: -35px;
   }
 `;
@@ -71,7 +90,11 @@ export const Person = styled.div`
   display: flex;
   flex-direction: column;
   width: 30%;
-  align-items:center;
+  align-items: center;
+  @media (max-width: 577px) {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 `;
 export const Image = styled.div`
   justify-content: center;
@@ -108,4 +131,10 @@ export const Skill = styled.span`
   left: 0;
   width: 30%;
   color: rgb(255, 255, 255);
+`;
+export const Icon = styled(FontAwesomeIcon)`
+position: absolute;
+top: -4.5rem;
+left: 0rem;
+color: #fff;
 `;
